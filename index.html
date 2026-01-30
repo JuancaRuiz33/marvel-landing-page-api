@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Comic+Neue:wght@400;700&family=Baloo+2:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container">
+            <!-- LOGO -->
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/2560px-Marvel_Logo.svg.png"
+                    height="40" alt="Marvel Logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#heroes">Heroes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#peliculas">Películas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#comics">Cómics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#Gamer">Gamer</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="hero-section d-flex align-items-center text-white">
+            <div class="container text-center" data-aos="fade-up">
+                <h1 class=" title-comic display-3 fw-bold mb-4">EXPLORA EL UNIVERSO MARVEL</h1>
+                <p class="lead fs-3 fw-bold mb-5">
+                    Descubre a tus héroes favoritos, las películas más exitosas y los cómics más populares
+                </p>
+                <a href="#heroes" class="btn btn-danger btn-read">Explorar</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="heroes" class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">HÉROES MÁS FAMOSOS</h2>
+            <div class="row g-4" id="heroes-container">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="heroModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-black text-white border border-danger">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4 align-items-start">
+                        <div class="col-md-4 text-center">
+                            <img class="modal-image img-fluid rounded shadow" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <h4 class="fw-bold modal-alterego"></h4>
+                            <p class="modal-description"></p>
+                            <p><strong>Primera aparición:</strong> <span class="modal-appearance"></span></p>
+                            <p><strong>Creadores:</strong> <span class="modal-creators"></span></p>
+                            <p><strong>Alias:</strong> <span class="modal-alias"></span></p>
+                            <p><strong>Habilidades:</strong> <span class="modal-powers"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-5 bg-danger px-4">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Video -->
+                <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
+                    <div class="p-2 bg-white border">
+                        <video class="w-100 rounded" autoplay muted loop controls>
+                            <source src="video/newcomic.mp4" type="video/mp4">
+                            Tu navegador no soporta el video.
+                        </video>
+                    </div>
+                </div>
+
+                <div class="col-md-6 ps-md-5" data-aos="fade-left">
+                    <h2 class="fw-bold text-white display-5 mb-4 title-2">Nuevo Comic de la semana</h2>
+                    <p class="fs-4 text-black fw-bold mb-4">
+                        ¡Mira los cómics más nuevos de Marvel que saldrán esta semana!
+                    </p>
+
+                    <button class="btn btn-dark btn-lg d-flex align-items-center rounded-pill px-4 py-2 custom-btn">
+                        <i class="bi bi-calendar-event me-2"></i> Calendario de lanzamientos
+                    </button>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="container py-5" id="comics">
+        <h3 class="fw-bold mb-4">NOVEDADES DE ESTA SEMANA</h3>
+        <div class="row g-4" id="comics-container">
+
+        </div>
+    </div>
+
+    <div id="cineCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="image/banner.webp" class="d-block w-100" style="height: 150px; object-fit: cover;"
+                    alt="Marvel">
+
+                <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+                    <h2 class="text-uppercase text-dark fw-bold display-5"
+                        style="font-family: 'Bangers', cursive; letter-spacing: 2px;">
+                        Cine Marvel
+                    </h2>
+                    <p class="text-dark fw-bold fs-5" style="font-family: 'Roboto', sans-serif;">
+                        ¡Viaja a las profundidades cósmicas del poderoso Universo Cinematográfico de Marvel!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN PELÍCULAS -->
+    <div class="container my-5" id="peliculas">
+        <h3 class="text-center fw-bold mb-4">Peliculas y Series de estreno</h3>
+        <div class="d-flex flex-nowrap overflow-auto gap-3 pb-3" id="movies-container">
+            
+        </div>
+    </div>
+
+    <!-- Modal -- -->
+    <div class="modal fade" id="infoModalMovie" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="row g-0">
+
+                    <div class="col-md-5">
+                        <img id="modalImagen" src="" class="img-fluid h-100 rounded-start" alt="Poster">
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="modal-header bg-danger text-white">
+                            <h5 class="modal-title" id="modalTitulo"></h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p id="modalDescripcion"></p>
+                            <p><b>Director:</b> <span id="modalDirector"></span></p>
+                            <p><b>Elenco:</b> <span id="modalElenco"></span></p>
+                            <p><b>Fecha:</b> <span id="modalFecha"></span></p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="https://www.marvel.com/" target="_blank" class="btn btn-danger">Ir a Marvel</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="games" class="py-5 bg-dark text-white">
+        <div class="container" id="Gamer">
+            <h2 class="text-center mb-5 fw-bold">VIDEOJUEGOS MARVEL</h2>
+
+
+            <ul class="nav nav-tabs justify-content-center mb-4" id="gamesTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="popular-tab" data-bs-toggle="tab" data-bs-target="#popularGames"
+                        type="button">Más Populares</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="recent-tab" data-bs-toggle="tab" data-bs-target="#recentGames"
+                        type="button">Recientes</button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="gamesTabContent">
+                <!-- Populares -->
+                <div class="tab-pane fade show active" id="popularGames" role="tabpanel">
+                    <div class="row g-4" id="contenedorPopulares"></div>
+                </div>
+
+                <!-- Recientes -->
+                <div class="tab-pane fade" id="recentGames" role="tabpanel">
+                    <div class="row g-4" id="contenedorRecientes"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL----- -->
+    <div class="modal fade" id="infoModalGames" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold" id="TituloGames">Título del Juego</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row align-items-center">
+                        <!-- Imagen -->
+                        <div class="col-md-5 text-center">
+                            <img id="ImagenGames" src="" class="img-fluid rounded shadow" alt="Juego Marvel">
+                        </div>
+                        <!-- Info -->
+                        <div class="col-md-7">
+                            <p class="mb-2"><strong>Descripción:</strong> <span id="DescripcionGames"></span></p>
+                            <p class="mb-2"><strong>Creador:</strong> <span id="CreadorGames"></span></p>
+                            <p class="mb-2"><strong>Género:</strong> <span id="GeneroGames"></span></p>
+                            <p class="mb-2"><strong>Clasificación:</strong> <span id="ClasificacionGames"></span></p>
+                            <p class="mb-2"><strong>Disponible en:</strong> <span id="DisponibleGames"></span></p>
+                            <p class="mb-2"><strong>Fecha de lanzamiento:</strong> <span id="FechaGames"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-5 px-3 bg-black text-center" style="font-family: 'Anton', Impact, sans-serif;">
+        <div class="container">
+            <h2 class="display-4 mb-4 text-white text-uppercase"
+                style="letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);" data-aos="fade-up">
+                VENGADORES DEL UNIVERSO <br> MARVEL
+            </h2>
+            <p class="lead mb-4 text-white" data-aos="fade-up" data-aos-delay="100">
+                Suscríbete a nuestro boletín para recibir contenido exclusivo, acceso anticipado a entradas y ofertas
+                especiales.
+            </p>
+            <form class="row g-2 justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-12 col-sm-6">
+                    <input type="email" class="form-control rounded-pill py-3 px-3 border-light"
+                        placeholder="Tu correo electrónico">
+                </div>
+                <div class="col-12 col-sm-auto">
+                    <button type="submit" class="btn btn-danger btn-lg rounded-pill px-5 py-3">
+                        Suscribirse
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="py-4 bg-danger text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                    <p class="mb-0">© 2023 Marvel. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white fs-5 me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white fs-5 me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white fs-5 me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white fs-5"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+{
+  "heroes": [
+    {
+      "id": 1,
+      "nombre": "Spider-Man",
+      "alterego": "Peter Parker",
+      "descripcion": "Un adolescente de Queens que, tras ser mordido por una araña radiactiva, obtiene habilidades arácnidas y se convierte en un héroe que protege Nueva York.",
+      "imagen": "../image/spide.jpg",
+      "aparicion": "Amazing Fantasy #15 (1962)",
+      "creadores": "Stan Lee, Steve Ditko",
+      "alias": "El trepamuros, Spidey",
+      "habilidades": "Agilidad sobrehumana, fuerza, sentido arácnido"
+    },
+    {
+      "id": 2,
+      "nombre": "Iron Man",
+      "alterego": "Tony Stark",
+      "descripcion": "Un genio inventor y empresario que construye un traje motorizado para salvar su vida y proteger al mundo.",
+      "imagen": "../image/iron.jpg",
+      "aparicion": "Tales of Suspense #39 (1963)",
+      "creadores": "Stan Lee, Larry Lieber, Don Heck, Jack Kirby",
+      "alias": "El hombre de hierro",
+      "habilidades": "Intelecto a nivel de genio, armadura tecnológica avanzada"
+    },
+    {
+      "id": 3,
+      "nombre": "Captain America",
+      "alterego": "Steve Rogers",
+      "descripcion": "Un soldado de la Segunda Guerra Mundial mejorado al máximo de la condición humana gracias al suero del súper soldado.",
+      "imagen": "../image/capamerica.jpg",
+      "aparicion": "Captain America Comics #1 (1941)",
+      "creadores": "Joe Simon, Jack Kirby",
+      "alias": "El primer vengador",
+      "habilidades": "Fuerza, agilidad, resistencia y liderazgo excepcionales"
+    },
+    {
+      "id": 4,
+      "nombre": "Black Panther",
+      "alterego": "T'Challa",
+      "descripcion": "Rey de Wakanda, nación tecnológicamente avanzada. Porta el manto de Black Panther para proteger a su pueblo.",
+      "imagen": "../image/blackpanter.jpg",
+      "aparicion": "Fantastic Four #52 (1966)",
+      "creadores": "Stan Lee, Jack Kirby",
+      "alias": "El rey de Wakanda",
+      "habilidades": "Fuerza y agilidad mejoradas, traje de vibranio, genio táctico"
+    }
+  ],
+  "comics": [
+    {
+      "titulo": "MARVEL/DC: DEADPOOL/BATMAN (2025) #1",
+      "autores": "Erwing, Capullo",
+      "imagen": "../image/batmanxdeadpool.jpg"
+    },
+    {
+      "titulo": "FANTASTIC FOUR (2025) #3",
+      "autores": "North, Ramos",
+      "imagen": "../image/fantastic-four.jpg"
+    },
+    {
+      "titulo": "MARVEL ZOMBIES: BANDA ROJA (2025) #1",
+      "autores": "Parker, Bazaldua, Tierra",
+      "imagen": "../image/marvelZombie.jpg"
+    },
+    {
+      "titulo": "NEW AVENGERS (2025) #4",
+      "autores": "Humphries, Palma, Segovia",
+      "imagen": "../image/new-avenger.jpg"
+    },
+    {
+      "titulo": "PUNISHER: RED BAND (2025) #1",
+      "autores": "Percy, Ohta, Checchetto",
+      "imagen": "../image/Punisher-Red Band.jpg"
+    },
+    {
+      "titulo": "THE AMAZING SPIDERN-MAN (2025) #12",
+      "autores": "Kelly, Mcguinness",
+      "imagen": "../image/amazing-spiderman.jpg"
+    },
+    {
+      "titulo": "EXCEPTIONAL X-MEN (2024) #13",
+      "autores": "Erwing, Mancin, Carnero",
+      "imagen": "../image/X-Men-excepcionales.jpg"
+    },
+    {
+      "titulo": "SPIDER-GIRL(2025) #1",
+      "autores": "Gronbekk, Risso, Nakayama",
+      "imagen": "../image/chica-araña.jpg"
+    },
+    {
+      "titulo": "EDGE OF VENOMVERSE(2025) #1",
+      "autores": "Nieto",
+      "imagen": "../image/venomverse.jpg"
+    },
+    {
+      "titulo": "ULTIMATES (2024) #16",
+      "autores": "Camp, Frigeri, Ruan",
+      "imagen": "../image/theUltimates.jpg"
+    },
+    {
+      "titulo": "ONE WORLD INDER DOOM (2025) #7",
+      "autores": "North, Silva, Harvey",
+      "imagen": "../image/dr-doom.jpg"
+    },
+    {
+      "titulo": "PHOENIX (2024) #15",
+      "autores": "Phillips, Mercado, Werneck",
+      "imagen": "../image/phoenix.jpg"
+    }
+  ],
+  "movies": [
+    {
+      "titulo": "Avengers: Secret Wars",
+      "descripcion": "Avenger: Secret Wats de Marvel Studios llegara a los cines el 17 diciembre del 2027",
+      "directores": "Joe Russo y Anthony Russo",
+      "elenco": "Robert Downey Jr.",
+      "año": "Diciembre 17, 2027",
+      "imagen": "../image/avengerssecretwars.jpg"
+    },
+    {
+      "titulo": "Blade",
+      "año": "Sin fecha de estreno",
+      "elenco": "Mahershala Ali",
+      "imagen": "../image/blade_lob.jpg"
+    },
+    {
+      "titulo": "Avengers: Doomsday",
+      "descripcion": "Avengers: Doomsday de Marvel Studios se estrenara el 18 de diciembre de 2026",
+      "director": "Joe Russo y Anthony Russo",
+      "elenco": "Robert Downey Jr.",
+      "año": "Diciembre 18, 2026",
+      "imagen": "../image/avengersdoomsday.jpg"
+    },
+    {
+      "titulo": "Spider-Man: Brand New Day",
+      "descripcion": "'Spider-Man: Brand New Day', protagonizada por Tom Holland y dirigida por Destin Daniel Cretton, llegará a los cines el 31 de julio de 2026.",
+      "director": "Destin Daniel Cretton",
+      "elenco": "Tom Holland",
+      "año": "Julio 31, 2026",
+      "imagen": "../image/spidermanbrandnewday.jpg"
+    },
+    {
+      "titulo": "Daredevil: Born Again | Temporada 2",
+      "descripcion": "La segunda temporada de 'Daredevil: Born Again' de Marvel Television se transmitirá exclusivamente en Disney+.",
+      "director": "Justin Benson y Aaron Moorhead",
+      "elenco": "Charlie Cox",
+      "año": "Marzo 4, 2025",
+      "imagen": "../image/daredevilbornagain.jpg"
+    },
+    {
+      "titulo": "Wonder Man",
+      "descripcion": "La serie de acción real original 'Wonder Man' de Marvel Television se estrenará en diciembre de 2025.",
+      "director": "Destin Daniel Cretton",
+      "elenco": "Yahya Abdul-Mateen II",
+      "año": "Diciembre, 2025",
+      "imagen": "../image/wonderman.jpg"
+    }
+  ],
+  "games": [
+    {
+      "titulo": "Marvel's Spider-Man 2",
+      "descripcion": "El increíble poder del simbionte obliga a Peter Parker y Miles Morales a una lucha desesperada",
+      "creador": "Insomniac Games",
+      "genero": "Acción / Aventura",
+      "clasificacion": "T (Teen)",
+      "disponible": "PS5, PC",
+      "fecha": "Octubre 20, 2023",
+      "imagen": "../image/marvelsspiderman2.jpg",
+      "categoria": "populares"
+    },
+    {
+      "titulo": "Lego Marvel Super Heroes",
+      "descripcion": "Historia original con personajes de Marvel en versión LEGO.",
+      "creador": "Warner Bros.",
+      "genero": "Acción / Aventura",
+      "clasificacion": "E10+",
+      "disponible": "PS4, Xbox, Switch, PC",
+      "fecha": "2014",
+      "imagen": "../image/legomarvelsuperheroes.jpg",
+      "categoria": "populares"
+    },
+    {
+      "titulo": "Guardians of the Galaxy",
+      "descripcion": "Lidera a los Guardianes en una aventura llena de humor y acción galáctica.",
+      "creador": "Eidos-Montreal",
+      "genero": "Acción / Aventura",
+      "clasificacion": "T (Teen)",
+      "disponible": "PS5, Xbox, PC",
+      "fecha": "2021",
+      "imagen": "../image/marvelsguardiansofthegalaxy.jpg",
+      "categoria": "populares"
+    },
+    {
+      "titulo": "Marvel Rival",
+      "descripcion": "¡Marvel Rivals es un shooter JcJ por equipos de superhéroes! Reúne un escuadrón estelar de Marvel, diseña incontables estrategias combinando poderes para formar habilidades únicas de equipo y lucha en campos de batalla destructibles y en constante evolución por todo el Universo Marvel.",
+      "creador": "NetEase Games",
+      "genero": "Acción / PvP",
+      "clasificacion": "T (Teen)",
+      "disponible": "PS5, Xbox, PC",
+      "fecha": "2024",
+      "imagen": "../image/marvelrivals.jpg",
+      "categoria": ["populares", "recientes"]
+    },
+    {
+      "titulo": "MARVEL Tōkon: Fighting Souls",
+      "descripcion": "Vive el Universo Marvel como nunca antes con personajes y escenarios renovados, una banda sonora trepidante, mecánicas de juego intuitivas y gráficos impresionantes que te mantendrán en vilo.",
+      "creador": "Arc System Works",
+      "genero": "Acción / Batalla",
+      "clasificacion": "T (Teen)",
+      "disponible": "PS5, PC",
+      "fecha": "2026",
+      "imagen": "../image/marveltokon.jpg",
+      "categoria": "recientes"
+    },
+    {
+      "titulo": "Deadpool VR de Marvel",
+      "descripcion": "Un sentido del humor enfermizo. Parkour brutal. Caos absoluto. ¡Pásalo en grande con un sistema de combate salvaje donde si puedes imaginarlo, probablemente puedas hacerlo!",
+      "creador": "Twisted Pixel Games",
+      "genero": "Acción",
+      "clasificacion": "RP +17",
+      "disponible": "Meta Quest",
+      "fecha": "2025",
+      "imagen": "../image/marvelsdeadpoolvr.jpg",
+      "categoria": "recientes"
+    }
+
+    
+  ]
+}

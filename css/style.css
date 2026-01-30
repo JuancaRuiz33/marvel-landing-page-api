@@ -1,0 +1,132 @@
+.navbar-nav .nav-link {
+    font-family: 'Comic Neue', sans-serif;
+    color: #f8d7da;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-underline-offset: 4px;
+    font-weight: bold;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../image/marvel-comics.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+}
+
+.title-comic {
+    font-family: 'Bangers', cursive;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-shadow:
+        3px 3px 0 #ff0000,
+        -3px -3px 0 #ff0000,
+        3px -3px 0 #ff0000,
+        -3px 3px 0 #ff0000;
+}
+
+.btn-read {
+    font-weight: bold;
+    text-transform: uppercase;
+    transform: skew(-20deg);
+    /* inclinación */
+}
+
+.btn-read span {
+    display: inline-block;
+    transform: skew(20deg);
+    /* corrige el texto */
+}
+
+.character-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.character-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.4);
+}
+
+.character-card:hover .card-title,
+.character-card:hover .card-text {
+    color: #dc3545;
+}
+
+.title-2 {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.custom-btn {
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-btn:hover {
+    background-color: #6c757d !important;
+    color: #fff !important;
+    transform: translateY(-2px);
+}
+
+#comics-container .card .card-title,
+#comics-container .card .card-text {
+    color: black;
+    transition: color 0.3s ease-in-out;
+}
+
+#comics-container .card:hover .card-title,
+#comics-container .card:hover .card-text {
+    color: #dc3545 !important;
+}
+
+.card:hover .card-title {
+    color: red;
+    cursor: pointer;
+}
+
+
+#movies-container::-webkit-scrollbar {
+    height: 10px;
+}
+
+#movies-container::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+}
+
+#movies-container::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+.nav-tabs .nav-link {
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin: 0 5px;
+    background: linear-gradient(145deg, #222, #444);
+    transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link.active {
+    background: linear-gradient(145deg, #e62429, #b71c1c);
+    color: #fff;
+    box-shadow: 0 0 10px rgba(230, 36, 41, 0.7);
+}
+
+.nav-tabs .nav-link:hover {
+    background: linear-gradient(145deg, #333, #555);
+    color: #fff;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
